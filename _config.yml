@@ -67,6 +67,10 @@ google_analytics:
 # Google maps API key, get your key here: https://developers.google.com/maps/documentation/javascript/get-api-key
 google_maps_api_key:
 
+mailchimp:
+  form_action:    "https://pressapps.us8.list-manage.com/subscribe/post?u=2e56c123105fcd37e5dab02bd&id=e6e945b784"
+  hidden_name:    "b_2e56c123105fcd37e5dab02bd_e6e945b784"
+  
 # Number of posts displayed on blog page
 # paginate: 10
 
@@ -79,6 +83,8 @@ uploads:        /uploads/
 # Build settings
 markdown:           kramdown
 highlighter:        rouge
+kramdown: 
+  toc_levels: "2" 
 
 plugins:
   - jekyll-feed

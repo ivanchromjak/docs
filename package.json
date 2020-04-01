@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/",
   "dependencies": {
-    "uikit": "latest"
+    "uikit": "3.3.7"
   },
   "devDependencies": {
     "jshint": "latest",

@@ -1,5 +1,15 @@
 ---
 title: Knowledge Base WordPress Plugin
+cta:
+  - title: Contact Support
+    icon: lifesaver
+    url: https://codecanyon.net/item/knowledge-base-helpdesk-wiki-wordpress-plugin/5758910/support
+  # - title: Learn Jekyll
+  #   icon: album
+  #   url: https://codecanyon.net/item/knowledge-base-helpdesk-wiki-wordpress-plugin/5758910/support
+  - title: Customization Services
+    icon: code
+    url: https://codecanyon.net/item/knowledge-base-helpdesk-wiki-wordpress-plugin/5758910/support
 ---
 
 #### Table of contents
@@ -181,7 +191,7 @@ and all countries codes can be found [here](http://www.gnu.org/software/gettext/
 
 ## Product Support
 
-Support is only provided through item [support](https://codecanyon.net/item/knowledge-base-helpdesk-wiki-wordpress-plugin/5758910/support) tab on Codecanyon. If you have a pre-sale question feel free to use the item [support](https://codecanyon.net/item/knowledge-base-helpdesk-wiki-wordpress-plugin/5758910/support) tab or item [comments](https://codecanyon.net/item/knowledge-base-helpdesk-wiki-wordpress-plugin/5758910/comments) tab on Codecanyon.
+Support is only provided through item support tab on Codecanyon.
 
 Please note items downloaded from Envato Elements are not supported so you will be unable to get assistance with technical questions, installation, third-party assets or direct guidance.
 

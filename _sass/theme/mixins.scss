@@ -2,9 +2,10 @@
 .article-content {
 
   > h2 {
-    margin-top: 60px;
+    margin-top: 70px;
+    margin-bottom: 40px;
     padding-bottom: 10px;
-    border-bottom: solid 2px $global-border;
+    border-bottom: solid 1px $global-border;
   }
   figure, .uk-slideshow {
     margin-top: $global-medium-margin * 1.1;

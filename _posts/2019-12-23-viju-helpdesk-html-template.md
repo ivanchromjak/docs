@@ -30,11 +30,11 @@ This responsive theme built with on UIkit 3.2 so please refer to original docs f
 
 The template consists of:
 
-`guia/dist/index.html` - Home knowledgebase page  
-`guia/dist/article.html` - Article page  
-`guia/dist/changelog.html` - Changelog page  
-`guia/dist/category.html` - Category page  
-`guia/dist/contact.html` - Contact us page with a form
+`dist/index.html` - Home knowledgebase page  
+`dist/article.html` - Article page  
+`dist/subcategory.html` - Subcategory page  
+`dist/terms.html` - Terma page  
+`dist/contact.html` - Contact us page with a form
 
 ### Navigation
 Header navigation link are located within the `<nav>` tag, active page link has `"uk-active"` class assigned.
@@ -56,17 +56,17 @@ Template comes with contact form in contact.html file. You can copy paste the fo
 Template comes with autocomplete Awesomplete search included, documentation can be found here [http://leaverou.github.io/awesomplete/](http://leaverou.github.io/awesomplete/). Awesomplete and demo search JS is included before closing `</body>` tag:
   
 
-Javascript source files are located in `guia/src/js/` folder.
+Javascript source files are located in `src/js/` folder.
 
 ## CSS File and Structure
-To modify the look and feel of the template, edit the SASS files located in `guia/src/scss/` folder. 
+To modify the look and feel of the template, edit the SASS files located in `src/scss/` folder. 
 ```
-guia/src/scss/main.scss - Main template styles file that imports partial SASS files
+src/scss/main.scss - Main template styles file that imports partial SASS files
 ```
 
 If you would like to edit a specific Uikit component, you can either: 
-override SASS variables in `guia/src/scss/_variables.scss`
-or modify/create a custom class in `guia/src/scss/_mixins.scss`.
+override SASS variables in `src/scss/_variables.scss`
+or modify/create a custom class in `src/scss/_mixins.scss`.
 
 For the list of all available variables and mixins in Uikit see the following files:
 `node_modules/uikit/src/scss/variables.scss`  
@@ -84,12 +84,12 @@ CodeKit is then used to compile template source files (KIT/SASS/JS) in root fold
 ## JavaScript
 The following scripts are loaded before the body closing tag:
 
-`guia/dist/js/awesomplete.js` - Contains Awesomplete search script
-`guia/dist/js/custom.js` - Contains custom script, add your Javascript here
+`dist/js/awesomplete.js` - Contains Awesomplete search script
+`dist/js/custom.js` - Contains custom script, add your Javascript here
 
 The following script are loaded head tag:
 
-`guia/dist/js/uikit.js` - Contains main UIkit scripts and icons
+`dist/js/uikit.js` - Contains main UIkit scripts and icons
 
 Detailed UIkit script documentation is located here [https://getuikit.com/docs/javascript](https://getuikit.com/docs/javascript).
 

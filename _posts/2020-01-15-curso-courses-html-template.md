@@ -1,15 +1,15 @@
 ---
-title: LMS Courses HTML Template
+title: Curso LMS Courses HTML Template
 cta:
   - title: Contact Support
     icon: lifesaver
-    url: https://themeforest.net/user/unboundstudio
+    url: https://themeforest.net/item/curso-courses-and-lms-html5-responsive-template/25296753/support
   # - title: Learn Jekyll
   #   icon: album
-  #   url: https://themeforest.net/user/unboundstudio
+  #   url: https://themeforest.net/item/curso-courses-and-lms-html5-responsive-template/25296753/support
   - title: Customization Services
     icon: code
-    url: https://unbound.studio/contact/
+    url: https://themeforest.net/item/curso-courses-and-lms-html5-responsive-template/25296753/support
 ---
 
 #### Table of contents
@@ -31,11 +31,11 @@ This responsive theme built with on UIkit 3.2 so please refer to original docs f
 The template consists of:
 
 `dist/index.html` - Home page  
-`dist/vision.html` - Vision page  
-`dist/founders.html` - Founders page  
-`dist/blog.html` - Blog page  
-`dist/post.html` - Post page   
-`dist/contact.html` - Contact page  
+`dist/courses.html` - Courses page  
+`dist/course.html` - Course page  
+`dist/search.html` - Search page  
+`dist/sign-in.html` - Sign in page  
+`dist/sign-up.html` - Sign up page   
 
 ### Navigation
 Header navigation link are located within the `<nav>` tag, active page link has `"uk-active"` class assigned.
@@ -85,18 +85,12 @@ Detailed UIkit script documentation is located here [https://getuikit.com/docs/j
 ## Manually Overriding Files
 If you decide to manually modify CSS/JS files (not recommended) use `/dist` folder. If you would like to edit a specific component of the site, simply check the table of contents in the `main.css` template  file, and then scroll down until you find the appropriate style that needs to be edited.
 
-If you would like to edit the primary color of the theme you should do "Replace all" color `#69DF87` with the desired one.
-
-## Framework
-Template uses UIkit front-end framework version 3, documentation is located here: [https://getuikit.com/docs/introduction](https://getuikit.com/docs/introduction).
+If you would like to edit the primary color of the theme you should do "Replace all" color `#3d4f7f` with the desired one.
 
 ## Support
-Depending on where you purchased the product, contact us:
+Customer support is provided through our Envato item [support](https://themeforest.net/item/curso-courses-and-lms-html5-responsive-template/25296753/support) tab for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 24h.
 
-- Creative Market: Contact us through "Ask a question" button on the products page on Creative Market
-- Gumroad: The purchase receipt contains our contact email address
-
-Customer support is provided for up to six months from the purchase date and is provided Monday to Friday during the business week. We aim to answer all support requests daily, most are handled within 24h.
+Please note items downloaded from Envato Elements are not supported so you will be unable to get assistance with technical questions, installation, third-party assets or direct guidance.
 
 Before contacting support please:
 

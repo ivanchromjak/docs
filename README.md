@@ -213,7 +213,7 @@ To modify the primary color, open `/_sass/theme/variables.scss` and replace the 
 
 ```scss
 // Primary color
-$tm-primary-color: #0089ff;
+$tm-primary-color: #05c896;
 // Body background
 $tm-body-background: linear-gradient(to top, #0065fd 0%, #0089ff 100%);
 ```

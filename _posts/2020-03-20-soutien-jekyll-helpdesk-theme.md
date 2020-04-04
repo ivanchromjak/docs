@@ -54,7 +54,7 @@ npm run build
 To modify the primary color, open `/_sass/theme/variables.scss` and replace the color values e.g.:
 
 ```scss
-$global-primary-background:                   #05c896;
+$global-primary-background:                   #3dd0ae;
 ```
 
 Further style customisation can be done in the following files:
@@ -64,44 +64,32 @@ Further style customisation can be done in the following files:
 /assets/css/main.scss
 ```
 
-### Hooks
-There are four hook inlude files that simplify adding content or scripts in the theme locations:
-- `_includes/hook-head.html`
-- `_includes/hook-pre-closing-body.html`
-
 ## Site and author details
 Add your site and author details in `_config.yml`:
 
 ```yaml
 # Site title and description
-title:              Guia
-description:        Customer helpdesk Jekyll theme.
+title:              Soutien
+description:        Helpdesk Jekyll theme.
 lang:               en
 
 # Site subpath, e.g. /blog
 baseurl:            ""
 
 # Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
-permalink:          /:categories/:title/
+permalink:          /:title/
 
 # Site base hostname & protocol, e.g. http://example.com
 url:                ""
 
 # Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
 logo:               
-  
+
 # Default author settings
 author:
     name:           Pete Seth
     title:          Lead Developer  
     avatar:         avatar-tom.png
-
-# Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
-authors:
-    john:
-      name:         John Brown
-      title:        Support     
-      avatar:       avatar-john.png
 ```
 
 ## Update favicon
@@ -115,70 +103,6 @@ Set in the main navigation links in `_data/navigation_header.yml`:
   - title: About
     url: /about/
 ```
-
-To add a button to navigation use:
-```yaml
-  - title: Contact
-    url: /contact/
-    button: success
-```
-
-All available buttons:
-```yaml
-  - title: Changelog
-    url: /contact/
-    button: default
-
-  - title: Contact
-    url: /contact/
-    button: primary
-
-  - title: Changelog
-    url: /contact/
-    button: secondary
-
-  - title: Changelog
-    url: /contact/
-    button: primary-outline
-```
-## Translation 
-Set your language code in `_config.yml`:
-```yml
-lang: en
-```
-Theme strings can be translated in `_data/translation.yml`, copy the current English translation and paste it bellow the Eglish translation, then replace `en` with you language code that you set in `_config.yml` and translate the strings.
-
-```yml
-en:
-  previous:                   "Previous"
-  next:                       "Next"
-  related_posts:              "Related Posts"
-  written_by:                 "Written by"
-  share_twitter:              "Share on Twitter"
-  share_facebook:             "Share on Facebook"
-  search_placeholder:         "Search for answers"
-  search_no_results:          "No results found"
-  mobile_nav_site:            "Menu"
-  contact_name:               "Name"
-  contact_email:              "Email"
-  contact_subject:            "Subject"
-  contact_message:            "Message"
-  contact_send:               "Send"
-```
-## Alerts
-There are four alert styles:
-
-{% raw %}
-```yaml
-{% include alert.html style="primary" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="success" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="warning" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="danger" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-```
-{% endraw %}
 
 ## Google Anaytics
 To enable Google Anaytics, add the following lines to your Jekyll site:
@@ -220,22 +144,6 @@ Submit the form and confirm your email address at [FormSpree](https://formspree.
 {% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="true" subject="true" %}
 ```
 {% endraw %}
-
-## Header 
-
-To add a hero header to home and category pages add the following to `_config.yml` file:
-
-```yaml
----
-header:
-  image: header.jpg
-  background: "rgba(0, 0, 0, 0.5)"
-  color: light
-  title: How can we help you?
-  subtitle:
-  search: true
-  ---
-  ```
 
 ## Sources
 

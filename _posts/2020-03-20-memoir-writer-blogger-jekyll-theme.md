@@ -68,8 +68,8 @@ author:
     youtube:        https://www.youtube.com/
 
 # Social share buttons
-twitter_username:   ivanchromjak
-github_username:    ivanchromjak
+twitter_username:   username
+github_username:    username
 ```
 
 ### Navigation Bar
@@ -120,9 +120,11 @@ Google Analytics will only appear in production, i.e., `JEKYLL_ENV=production`
 
 To display Google map on contact page, add the following in your page content, replacing latitude, longitude and zoom values:
 
+{% raw %}
 ```yaml
 {% include map.html latitude="40.6700" longitude="-73.9400" zoom="16" %}
 ```
+{% endraw %}
 
 ### Contact Form (via FormSpree)
 
@@ -174,19 +176,27 @@ To keep things more organized, add post images to `/assets/posts/` directory, an
 ### Adding images
 To add an image to a post or page use the following codes:
 Local image from `/assets/posts/` directory:
+
+{% raw %}
 ```yaml
 {% include image.html img="girl.jpg" alt="Alt for image" caption="Girl on a rock" %}
 ```
+{% endraw %}
+
 External wide image with lightbox:
+{% raw %}
 ```yaml
 {% include image.html img="https://source.unsplash.com/TT-ROxWj9nA.jpg" style="wide" lightbox="true" alt="Alt for image" caption="Wide image in lightbox" %}
 ```
+{% endraw %}
 
 ### Adding slideshow
 To add a slideshow to a page or post, create a slideshow directory in `/assets/posts/` directory e.g. `/assets/posts/slideshow-1/` and add all slideshow images inside. Then add the following code to page or post:
+{% raw %}
 ```yaml
 {% include slideshow.html gallery="slideshow-1" %}
 ```
+{% endraw %}
 
 ### Responsive Videos
 Embed local videos:

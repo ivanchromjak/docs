@@ -51,10 +51,10 @@ Compile and minify:
 npm run build
 ```
 ### Sass
-To modify the primary color, open `/_sass/theme/variables.scss` and replace the color values e.g.:
-
+To modify the primary color, open `/assets/css/main.scss` and replace the `#d40c3c` color value:
 ```scss
-$global-primary-background:                   #05c896;
+// Primary template color
+$global-primary-background: #d40c3c;
 ```
 
 Further style customisation can be done in the following files:
@@ -64,45 +64,43 @@ Further style customisation can be done in the following files:
 /assets/css/main.scss
 ```
 
-### Hooks
-There are four hook inlude files that simplify adding content or scripts in the theme locations:
-- `_includes/hook-head.html`
-- `_includes/hook-pre-closing-body.html`
-
 ## Site and author details
 Add your site and author details in `_config.yml`:
 
 ```yaml
 # Site title and description
-title:              Guia
-description:        Customer helpdesk Jekyll theme.
-lang:               en
-
-# Site subpath, e.g. /blog
-baseurl:            ""
-
-# Permalink URLs structure, for permalink style options see: https://jekyllrb.com/docs/permalinks/
-permalink:          /:categories/:title/
+title:              Desk - Helpdesk Jekyll Theme
+description:        Knowledge base Jekyll theme.
 
 # Site base hostname & protocol, e.g. http://example.com
-url:                ""
+url:                "https://my-site.com"
 
-# Site logo # e.g. logo.png, upload logo image file to /uploads/ folder
-logo:               
-  
-# Default author settings
+# Site logo, image or text
+brand:
+  image:          logo.png # e.g. logo.png, upload logo image file to /assets/img/ folder
+  text:           Desk      # if the above "logo:" image variable  is not set, this text logo is displayed instead
+
+# Author settings
 author:
-    name:           Pete Seth
-    title:          Lead Developer  
-    avatar:         avatar-tom.png
+  name:           John Smith
+  email:          john@somewebsite.com
+  website:        http://somewebsite.com
+  facebook:       https://www.facebook.com/
+  flickr:         https://flickr.com/
+  dribbble:       https://dribbble.com/
+  github:         https://github.com/
+  googleplus:     https://plus.google.com/
+  instagram:      https://www.instagram.com/
+  linkedin:       https://www.linkedin.com/feed/
+  pinterest:      https://www.pinterest.com/
+  twitter:        https://twitter.com/
+  vimeo:          https://vimeo.com/
+  youtube:        https://www.youtube.com/
 
-# Author settings, displayed on post and doc pages if front matter references author name e.g. author: peter
-authors:
-    john:
-      name:         John Brown
-      title:        Support     
-      avatar:       avatar-john.png
-```
+# Social share buttons
+twitter_username:   username
+github_username:    username
+  ```
 
 ## Update favicon
 
@@ -116,69 +114,84 @@ Set in the main navigation links in `_data/navigation_header.yml`:
     url: /about/
 ```
 
-To add a button to navigation use:
+## Home Page
+To create a home page, just create a `index.md` file inside the root directory. The following is a YAML Front Matter example for a page:
+
 ```yaml
-  - title: Contact
-    url: /contact/
-    button: success
+---
+layout: help
+title: How Can We Help You?
+subtitle: Self Help Support
+hero:
+  background: "#ffffff"   # background color, note setting a background image below will overlay the background color
+  image: ocean.jpg        # local image e.g ocean.jpg from /assets/posts/ folder or remote e.g https://source.unsplash.com/ZeXP6p7agjE
+  align: top              # header image alignment e.g. top, center or bottom
+  text: dark              # text color e.g. dark or light
+  search: true            # enable search
+category:
+  columns: 3              # number of category columns; 1, 2, 3, 4
+featured:
+  title: Featured Articles
+  tag: featured           # tag used to populate featured section on home page
+---
 ```
 
-All available buttons:
+Home page category boxes are added in `_data/navigation_categories.yml`, e.g.:
+
 ```yaml
-  - title: Changelog
-    url: /contact/
-    button: default
+- heading: Browse All Topics
+  categories:
+    - title: Getting Started
+      desc: Get your account up and running in just few easy steps
+      icon: settings
 
-  - title: Contact
-    url: /contact/
-    button: primary
-
-  - title: Changelog
-    url: /contact/
-    button: secondary
-
-  - title: Changelog
-    url: /contact/
-    button: primary-outline
+    - title: Account and Billing
+      desc: Managing your account, creating new users and exporting data
+      icon: credit-card
 ```
-## Translation 
-Set your language code in `_config.yml`:
-```yml
-lang: en
-```
-Theme strings can be translated in `_data/translation.yml`, copy the current English translation and paste it bellow the Eglish translation, then replace `en` with you language code that you set in `_config.yml` and translate the strings.
 
-```yml
-en:
-  previous:                   "Previous"
-  next:                       "Next"
-  related_posts:              "Related Posts"
-  written_by:                 "Written by"
-  share_twitter:              "Share on Twitter"
-  share_facebook:             "Share on Facebook"
-  search_placeholder:         "Search for answers"
-  search_no_results:          "No results found"
-  mobile_nav_site:            "Menu"
-  contact_name:               "Name"
-  contact_email:              "Email"
-  contact_subject:            "Subject"
-  contact_message:            "Message"
-  contact_send:               "Send"
-```
-## Alerts
-There are four alert styles:
+## Faqs
+To create a faq page, just create a new page inside the root directory and add the following code in content:
 
 {% raw %}
 ```yaml
-{% include alert.html style="primary" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="success" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="warning" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
-
-{% include alert.html style="danger" text="Cras at dolor eget urna varius faucibus tempus in elit." %}
+{% include faqs.html %}
 ```
 {% endraw %}
+
+Next create faq post entries in `_faqs` folder, similar to creating posts.
+
+## Images
+To keep things more organized, add post images to `/assets/posts/` directory, and add theme images to `/assets/img/` directory.
+
+To add an image to a post or page use the following codes: Local image from `/assets/posts/` directory:
+
+{% raw %}
+```yaml
+{% include image.html img="girl.jpg" alt="Alt for image" caption="Girl on a rock" %}
+```
+{% endraw %}
+
+External wide image with lightbox:
+
+{% raw %}
+```yaml
+{% include image.html img="https://source.unsplash.com/TT-ROxWj9nA.jpg" lightbox="true" alt="Alt for image" caption="Image in lightbox" %}
+```
+{% endraw %}
+
+## Adding table of contents to a post
+Add the following code at the top of the post:
+
+```yaml
+#### Sections in this article
+{:.no_toc}
+* TOC
+{:toc}
+```
+
+`{:.no_toc}` exludes `#### Sections` in this article title from indexing in table of contents.
+
 
 ## Google Anaytics
 To enable Google Anaytics, add the following lines to your Jekyll site:
@@ -201,50 +214,6 @@ You can find out more about Disqus' shortnames [here](https://help.disqus.com/cu
 
 Comments are enabled by default and will only appear in production, i.e., `JEKYLL_ENV=production`. If you don't want to display comments for a particular post you can disable them by adding `comments: false` to that post's YAML Front Matter.
 
-## Call to Action
-
-To add the following to a page:
-{% raw %}
-```yaml
-{% include cta.html title="Didn't find an answer?" button_text="Contact Us" button_url="/contact/" subtitle="Get in touch with us for details on setup and additional custom services pricing" %}
-```
-{% endraw %}
-
-## Contact Forms
-
-### Formspree
-Submit the form and confirm your email address at [FormSpree](https://formspree.io/). Then add the following include to a page, replacing the email address:
-
-{% raw %}
-```yaml
-{% include formspree.html email="my_name@gmail.com" redirect="/thanks/" name="true" subject="true" %}
-```
-{% endraw %}
-
-### Kwes
-Create the form at [Kwes](https://kwes.io/). Then add the following include to a page, replacing the key attribute with a one from you Kwes form:
-
-{% raw %}
-```yaml
-{% include kwes.html key="00000" redirect="/thanks/" name="true" subject="true" %}
-```
-{% endraw %}
-
-## Header 
-
-To add a hero header to home and category pages add the following to `_config.yml` file:
-
-```yaml
----
-header:
-  image: header.jpg
-  background: "rgba(0, 0, 0, 0.5)"
-  color: light
-  title: How can we help you?
-  subtitle:
-  search: true
-  ---
-  ```
 
 ## Sources
 

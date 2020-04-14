@@ -161,6 +161,8 @@ if ( is_pakb_category() ) {
 
 ## Sidebar Addon
 
+Contextual sidebar addon allows customers to access all knowledge base articles anywhere on the site without reloading the page. We have also added Contact form 7 integration. The addon is a separate [purchase here](https://codecanyon.net/item/pressapps-knowledge-base-contextual-sidebar-addon/21091013).
+
 ### Setup
 The addon will automatically display sidebar toggle button on your site after plugin activation with the default settings. Additional addon options settings are located under `Knowledge Base > Sidebar`. 
 

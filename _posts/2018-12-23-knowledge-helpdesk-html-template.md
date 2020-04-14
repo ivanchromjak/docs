@@ -37,7 +37,7 @@ Additional commands:
 
 
 ## Live Search
-The template uses jQuery Autocomplete script, details how to modify can be found on the script page: [​https://www.devbridge.com/sourcery/components/jquery-autocomplete/](​https://www.devbridge.com/sourcery/components/jquery-autocomplete/).
+The template uses jQuery Autocomplete script, details how to modify can be found on the script page:   [​https://www.devbridge.com/sourcery/components/jquery-autocomplete/](​https://www.devbridge.com/sourcery/components/jquery-autocomplete/).
 
 Demo search data is located in the `assets/content/countries.txt` file.
 
